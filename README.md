@@ -106,7 +106,7 @@ The **interactive Streamlit app** allows business users to:
 - View churn probability for individual customers  
 - Compare predictions across multiple models
 
-Deployed App: [Customer Churn Prediction App](https://ananyascodehq-customer-churn-prediction-app.streamlit.app/)
+Deployed App: (https://customer-churn-bytrymore.streamlit.app/)
 
 
 TRYMORE MHLANGA
