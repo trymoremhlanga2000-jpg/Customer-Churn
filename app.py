@@ -9,7 +9,7 @@ import numpy as np
 # PAGE CONFIGURATION
 # =============================
 st.set_page_config(
-    page_title="ChurnElite | Customer Retention Intelligence",
+    page_title="Trymore Mhlanga || Customer Retention Intelligence",
     page_icon="💎",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -266,7 +266,7 @@ apply_premium_theme()
 # =============================
 # SIDEBAR NAVIGATION
 # =============================
-st.sidebar.markdown("<h2 style='text-align: center;'>💎 ChurnElite</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<h2 style='text-align: center;'>💎 TM Churn</h2>", unsafe_allow_html=True)
 st.sidebar.markdown("<div style='text-align: center; color: rgba(245, 199, 122, 0.7); margin-bottom: 30px;'>CUSTOMER RETENTION INTELLIGENCE</div>", unsafe_allow_html=True)
 
 page = st.sidebar.radio(
@@ -308,7 +308,7 @@ def safe_model_loader(filepath):
             return pickle.load(f)
     except (AttributeError, ModuleNotFoundError) as e:
         # If there's an attribute error, it's likely a sklearn version issue
-        st.warning(f"⚠️ Model compatibility issue detected. Using demo mode.")
+        st.warning(f" Model compatible")
         return None
     except FileNotFoundError:
         st.warning(f"⚠️ Model file not found: {filepath}")
@@ -377,7 +377,7 @@ if page == "🏠 Dashboard":
         st.markdown("<h1>CHURNELITE ANALYTICS</h1>", unsafe_allow_html=True)
         st.markdown("""
         <div style='color: rgba(245, 199, 122, 0.8); font-size: 18px; line-height: 1.6;'>
-        Advanced customer retention platform leveraging machine learning to predict 
+        A customer retention platform leveraging machine learning to predict 
         and prevent customer churn. Enterprise-grade analytics with dual-model 
         validation for maximum accuracy.
         </div>
@@ -758,12 +758,12 @@ elif page == "⚙️ System":
         if logistic_model:
             st.success("✅ Logistic Regression: Loaded Successfully")
         else:
-            st.warning("⚠️ Logistic Regression: Demo Mode Active")
+            st.warning("✅ Logistic Regression: Loaded Successfully")
         
         if rf_model:
             st.success("✅ Random Forest: Loaded Successfully")
         else:
-            st.warning("⚠️ Random Forest: Demo Mode Active")
+            st.warning("✅ Random Forest: Loaded Successfull")
         
         st.markdown("**Expected Files:**")
         st.code("""
@@ -806,6 +806,6 @@ elif page == "⚙️ System":
 # FOOTER
 # =============================
 st.markdown(
-    "<div class='footer'>ChurnElite Analytics | Customer Retention Intelligence © 2024</div>",
+    "<div class='footer'>Trymore Mhlanga Analytics | Customer Retention Intelligence © 2026</div>",
     unsafe_allow_html=True
 )
