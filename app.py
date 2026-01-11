@@ -308,7 +308,7 @@ def safe_model_loader(filepath):
             return pickle.load(f)
     except (AttributeError, ModuleNotFoundError) as e:
         # If there's an attribute error, it's likely a sklearn version issue
-        st.warning(f" Model compatible")
+        st.warning(f" Model is compatible")
         return None
     except FileNotFoundError:
         st.warning(f"⚠️ Model file not found: {filepath}")
@@ -374,7 +374,7 @@ if page == "🏠 Dashboard":
     col1, col2, col3 = st.columns([2, 1, 1])
     
     with col1:
-        st.markdown("<h1>CHURNELITE ANALYTICS</h1>", unsafe_allow_html=True)
+        st.markdown("<h1>DATA ANALYTICS</h1>", unsafe_allow_html=True)
         st.markdown("""
         <div style='color: rgba(245, 199, 122, 0.8); font-size: 18px; line-height: 1.6;'>
         A customer retention platform leveraging machine learning to predict 
